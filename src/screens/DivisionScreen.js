@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {Alert, Button, Text, TextInput, View} from 'react-native';
+import React, { useState } from 'react';
+import { Alert, Button, Text, TextInput, View } from 'react-native';
 
-import {styles} from '../../assets/styles';
+import { styles } from '../../assets/styles';
 
 const Division = () => {
   const [numOne, setNumOne] = useState(null);
