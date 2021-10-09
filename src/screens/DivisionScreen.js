@@ -25,7 +25,9 @@ const Division = () => {
       <View style={styles.content}>
         <View style={styles.text}>
           <Text style={styles.title}>División de dos números</Text>
-          <Text style={styles.subtitle}>Descripción</Text>
+          <Text style={styles.subtitle}>
+            Ingrese 2 números para poder realizar la división.
+          </Text>
         </View>
         <View style={styles.form}>
           <Text style={styles.label}>Número 1:</Text>
