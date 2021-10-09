@@ -25,7 +25,9 @@ const Multiplication = () => {
       <View style={styles.content}>
         <View style={styles.text}>
           <Text style={styles.title}>Multiplicación de dos números</Text>
-          <Text style={styles.subtitle}>Descripción</Text>
+          <Text style={styles.subtitle}>
+            Ingrese 2 números para poder realizar la multiplicacion.
+          </Text>
         </View>
         <View style={styles.form}>
           <Text style={styles.label}>Número 1:</Text>

@@ -25,7 +25,9 @@ const Sum = () => {
       <View style={styles.content}>
         <View style={styles.text}>
           <Text style={styles.title}>Suma de dos números</Text>
-          <Text style={styles.subtitle}>Descripción</Text>
+          <Text style={styles.subtitle}>
+            Ingrese 2 números para poder realizar la suma.
+          </Text>
         </View>
         <View style={styles.form}>
           <Text style={styles.label}>Número 1:</Text>
