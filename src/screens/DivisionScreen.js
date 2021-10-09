@@ -1,9 +1,25 @@
-import React from 'react';
-import {Button, Text, TextInput, View} from 'react-native';
+import React, {useState} from 'react';
+import {Alert, Button, Text, TextInput, View} from 'react-native';
 
 import {styles} from '../../assets/styles';
 
 const Division = () => {
+  const [numOne, setNumOne] = useState(null);
+  const [numTwo, setNumTwo] = useState(null);
+  const [total, setTotal] = useState(0);
+
+  const division = () => {
+    if (isNaN(numOne) || isNaN(numTwo)) {
+      Alert.alert('Error', 'Debe ingresar valores numéricos', [
+        {
+          text: 'Ok',
+        },
+      ]);
+    } else {
+      setTotal(numOne / numTwo);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -12,13 +28,27 @@ const Division = () => {
           <Text style={styles.subtitle}>Descripción</Text>
         </View>
         <View style={styles.form}>
-          <Text style={styles.label}>Label</Text>
-          <TextInput style={styles.input} />
-          <Button title="Calcular" />
+          <Text style={styles.label}>Número 1:</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={setNumOne}
+            value={numOne}
+            keyboardType="numeric"
+          />
+          <Text style={styles.label}>Número 2:</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={setNumTwo}
+            value={numTwo}
+            keyboardType="numeric"
+          />
+          <Button title="Calcular" onPress={division} />
         </View>
         <View style={styles.result}>
           <Text style={styles.textResult}>El resultado es: </Text>
-          <Text style={[styles.textResult, styles.total]}>5</Text>
+          <Text style={[styles.textResult, styles.total]}>
+            {new Intl.NumberFormat().format(total)}
+          </Text>
         </View>
       </View>
     </View>
