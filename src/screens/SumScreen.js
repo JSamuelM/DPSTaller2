@@ -16,9 +16,7 @@ const Sum = () => {
         },
       ]);
     } else {
-      let value;
-      value = numUno + numDos;
-      setTotal(value);
+      setTotal(Number(numUno) + Number(numDos));
     }
   };
 
