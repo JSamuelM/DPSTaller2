@@ -13,6 +13,10 @@ Repositorio para el desarrollo de la práctica 02 de la materia Diseño y Progra
 | Luis Eduardo Cañas Santos | CS171609 | luisedu99    | luis   |
 | José Samuel Mena Reyes    | MR171621 | JSamuelM     | samuel |
 
+# Enlace a video
+
+Enlace al video donde se explica construcción y funcionamiento. [Enlace aquí](https://drive.google.com/drive/).
+
 # Uso de librerías
 
 En este proyecto se uso [React Native](https://reactnative.dev/) y para el gestor de dependencias se utilizó [Yarn](https://yarnpkg.com/) al clonar el repositorio debería ejecutar el siguiente comando
