@@ -1,9 +1,11 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
+import {styles} from '../../assets/styles';
+
 const Sum = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.container}>
       <Text>Sum Screen</Text>
     </View>
   );

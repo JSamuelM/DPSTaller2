@@ -1,9 +1,11 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
+import {styles} from '../../assets/styles';
+
 const Factorial = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.container}>
       <Text>Factorial Screen</Text>
     </View>
   );
