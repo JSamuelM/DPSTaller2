@@ -28,7 +28,9 @@ const Factorial = () => {
       <View style={styles.content}>
         <View style={styles.text}>
           <Text style={styles.title}>Factorial de un número</Text>
-          <Text style={styles.subtitle}>Descripción</Text>
+          <Text style={styles.subtitle}>
+            Ingrese un número para poder obtener el factorial de este mismo.
+          </Text>
         </View>
         <View style={styles.form}>
           <Text style={styles.label}>Número</Text>
