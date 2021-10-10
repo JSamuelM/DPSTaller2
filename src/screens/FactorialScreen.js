@@ -8,13 +8,13 @@ const Factorial = () => {
   const [total, setTotal] = useState(0);
 
   const factorial = () => {
-    if (isNaN(num)) {
+    if (!num || isNaN(num)) {
       Alert.alert('Error', 'Debe ingresar un valor numerico', [
         {
           text: 'Ok',
         },
       ]);
-    } else {
+    } else if (num != null) {
       let value = 1;
       for (let index = 2; index <= num; index++) {
         value = value * index;

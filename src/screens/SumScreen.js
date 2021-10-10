@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Alert, Button, Text, TextInput, View } from 'react-native';
+import React, {useState} from 'react';
+import {Alert, Button, Text, TextInput, View} from 'react-native';
 
-import { styles } from '../../assets/styles';
+import {styles} from '../../assets/styles';
 
 const Sum = () => {
   const [numUno, setNumUno] = useState(null);
@@ -9,13 +9,13 @@ const Sum = () => {
   const [total, setTotal] = useState(0);
 
   const suma = () => {
-    if (isNaN(numUno) || isNaN(numDos)) {
+    if (!numUno || !numDos || isNaN(numUno) || isNaN(numDos)) {
       Alert.alert('Error', 'Debe ingresar valores numéricos', [
         {
           text: 'Ok',
         },
       ]);
-    } else {
+    } else if (numUno != null && numDos != null) {
       setTotal(Number(numUno) + Number(numDos));
     }
   };
