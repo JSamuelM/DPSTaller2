@@ -15,7 +15,7 @@ Repositorio para el desarrollo de la práctica 02 de la materia Diseño y Progra
 
 # Enlace a video
 
-Enlace al video donde se explica construcción y funcionamiento. [Enlace aquí](https://drive.google.com/file/d/1GkvQuqrKQduqeOO4-reLQKeK7Ofzv648/view?usp=sharing).
+Enlace al video donde se explica construcción y funcionamiento. [Enlace aquí](https://drive.google.com/file/d/1xJjt32muT28SiHi0shCgbMtBxXdLnrg0/view?usp=sharing).
 
 # Uso de librerías
 
